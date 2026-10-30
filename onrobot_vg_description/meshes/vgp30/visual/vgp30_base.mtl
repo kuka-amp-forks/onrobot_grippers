@@ -1,0 +1,23 @@
+newmtl mat_0
+Kd 0.1500 0.1500 0.1500
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+Ns 20
+d 1.0000
+illum 2
+
+newmtl mat_1
+Kd 0.7835 0.8228 0.8469
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+Ns 20
+d 1.0000
+illum 2
+
+newmtl mat_2
+Kd 0.5333 0.5520 0.5271
+Ka 0 0 0
+Ks 0.1 0.1 0.1
+Ns 20
+d 1.0000
+illum 2
