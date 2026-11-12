@@ -11,8 +11,7 @@
 
      onrobot_vgp30 = onrobot_vgp30_base + onrobot_vgp30_20cups.
 
-     Meshes from OnRobot's STEP (vgp30_v1.step, 2024-12-05), simplified to
-     0.5 mm (cups 2 mm). Flange face to cup lips 88.2 mm. Collision is boxes.
+     Flange face to cup lips 88.2 mm. Collision is boxes.
      Mass: 3.1 kg (datasheet) split 2.7 kg body / 0.4 kg cups (nominal), plus
      the 0.3 kg torque reinforcement bracket on the body (required on robots
      rated for 20 kg and above; not in the CAD). Inertia as solid boxes. -->

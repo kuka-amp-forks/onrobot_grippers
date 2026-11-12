@@ -31,6 +31,8 @@ frame. `onrobot_vgp20` is both. Another cup set is another macro that attaches
 its own `suction` link to `vgp20_cup_mount`. Collision is boxes.
 
 ### VGP30 (20 suction cups)
+<img src="images/vgp30_visual.png" height="200">  <img src="images/vgp30_collision.png" height="200">  
+
 `onrobot_vgp30_macro.xacro` is laid out the same way: `onrobot_vgp30_base`
 (`vgp30_base_link` on the flange, x along the 390 mm side, `vgp30_cup_mount` on
 the cup face), `onrobot_vgp30_20cups` (`suction` at the cup lips, 88.2 mm from
