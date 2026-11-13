@@ -1,12 +1,13 @@
 # OnRobot vacuum gripper
 
-This package contains the URDF files describing OnRobot vacuum grippers (VG10, VGC10 and VGP20).
+This package contains the URDF files describing OnRobot vacuum grippers (VG10, VGC10, VGP20 and VGP30).
 
 ```
 roslaunch onrobot_vg_description disp_vg10_model.launch  
 roslaunch onrobot_vg_description disp_vgc10_1cup_model.launch  
 roslaunch onrobot_vg_description disp_vgc10_4cups_model.launch  
 ros2 launch onrobot_vg_description disp_vgp20_model.launch.xml
+ros2 launch onrobot_vg_description disp_vgp30_model.launch.xml
 ```
 
 ## Visual and Collision models
@@ -28,6 +29,16 @@ of it) with a `vgp20_cup_mount` frame on its cup face; `onrobot_vgp20_16cups`
 hangs the cups (`suction`, origin at the cup lips' centre, the TCP) off that
 frame. `onrobot_vgp20` is both. Another cup set is another macro that attaches
 its own `suction` link to `vgp20_cup_mount`. Collision is boxes.
+
+### VGP30 (20 suction cups)
+<img src="images/vgp30_visual.png" height="200">  <img src="images/vgp30_collision.png" height="200">  
+
+`onrobot_vgp30_macro.xacro` is laid out the same way: `onrobot_vgp30_base`
+(`vgp30_base_link` on the flange, x along the 390 mm side, `vgp30_cup_mount` on
+the cup face), `onrobot_vgp30_20cups` (`suction` at the cup lips, 88.2 mm from
+the flange) and `onrobot_vgp30` for both. Meshes from OnRobot's STEP
+(`vgp30_v1.step`); the mass includes the torque reinforcement bracket, which
+OnRobot requires on robots rated for 20 kg and above.
 
 ## Reference
 - To generate a collision model, you can use [rosmodelgen](https://github.com/takuya-ki/rosmodelgen)
